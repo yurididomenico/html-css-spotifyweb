@@ -182,6 +182,12 @@ body
   margin: 0 1px;
 }
 
+.contenitore-bottom-left
+{text-align: left;}
+.contenitore-bottom-center
+{text-align: center;}
+.contenitore-bottom-right
+{text-align: right;}
 
 
 
