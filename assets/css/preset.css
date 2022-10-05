@@ -176,6 +176,10 @@
 }
 
 /* (_____ Font Size ____________________________) */
+.font-02
+{
+  font-size: 0.2rem;
+}
 .font-xxs
 {
   font-size: 0.6rem;

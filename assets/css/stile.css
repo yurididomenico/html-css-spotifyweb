@@ -23,11 +23,11 @@ body
 {
 
   /* COLORE DI SFONDO TEMPORANEO */
-  background-color: grey;
+  /* background-color: rgb(199, 199, 199); */
   /* COLORE DI SFONDO TEMPORANEO */
 
 
-  /* background-color: #141922; */
+  background-color: #141922;
   
   height: 100vh;
   color: white;
@@ -56,11 +56,44 @@ body
 /* |||||||||| MAIN |||||||||| */
 .main
 {
-  padding-left: 70px;
-  padding-top: 100px;
+  padding: 90px 0 0 80px;
   overflow-y: scroll;
+  margin-bottom: 100px;
 }
 
+.main > .main-sezione-1
+{
+  margin-bottom: 20px;
+}
+
+.main-sezione-1 > a
+{
+  margin: 10px 5px;
+}
+
+
+
+.carte > div > img
+{
+  width: 100%;
+}
+
+.carte > div
+{
+  width: calc(100% / 2 - 30px);
+  margin: 10px 10px 0 0;
+}
+
+.carte p
+{
+  font-size: 0.6rem;
+  color: rgb(131, 131, 131);
+}
+
+.carte > div > *:not(img)
+{
+  margin: 5px 0;
+}
 
 /* |||||||||| FOOTER |||||||||| */
 
@@ -75,7 +108,8 @@ body
   background-color: black;
   z-index: 1;
   position: fixed;
-  width: 15%;
+  width: 50px;
+  /* width: 15%; */
   height: 90%;
 }
 
