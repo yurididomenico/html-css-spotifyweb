@@ -115,13 +115,72 @@ body
 
 .contenitore-bottom
 {
-  padding: 20px;
+  padding: 10px;
   background-color: #282828;
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 10%;
 }
+
+.contenitore-bottom > div > div
+{
+  margin: 0 5px;
+}
+
+.contenitore-bottom > div > div > span
+{
+  margin: 0 0 2px 0;
+}
+
+.brano-riproduzione
+{
+  width: 25px;
+  aspect-ratio: 1/1;
+}
+
+.brano-riproduzione img
+{
+  width: 100%;
+}
+
+.brano-riproduzione-icone > span
+{
+  display: block;
+}
+
+.contenitore-bottom-center > div > i
+{
+  margin: 0 2px;
+}
+
+.contenitore-bottom-center > div:last-child
+{
+  margin: 5px 0;
+}
+
+.barra-canzone
+{
+  width: 50%;
+  height: 4px;
+  background-color: grey;
+  vertical-align: middle;
+  border-radius: 6px;
+}
+
+.barra-canzone > div
+{
+  background-color: white;
+  width: 20%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.canzone-riproduzione > *
+{
+  margin: 0 2px;
+}
+
 
 
 

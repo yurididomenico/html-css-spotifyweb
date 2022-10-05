@@ -211,10 +211,19 @@
 }
 
 /* (_____ Display ____________________________) */
+.inline
+{
+  display: inline;
+}
 .block
 {
   display: block;
 }
+.inline-block
+{
+  display: inline-block;
+}
+
 
 .sottolineato
 {
@@ -296,6 +305,10 @@
   color: #fbc067;
 }
 
+.grigio
+{
+  color: grey;
+}
 
 
 

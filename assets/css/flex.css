@@ -57,7 +57,10 @@
   flex-grow: 1;
 }
 
-
+.f-basis-30
+{
+  flex-basis: 30%;
+}
 
 
 
