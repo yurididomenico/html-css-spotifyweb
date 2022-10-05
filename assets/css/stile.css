@@ -19,6 +19,24 @@ a
   color: inherit;
 }
 /* |||||||||| INIZIO |||||||||| */
+body
+{
+
+  /* COLORE DI SFONDO TEMPORANEO */
+  background-color: grey;
+  /* COLORE DI SFONDO TEMPORANEO */
+
+
+  /* background-color: #141922; */
+  height: 100vh;
+  color: white;
+}
+
+
+
+
+
+
 
 
 /* |||||||||| HEADER |||||||||| */
@@ -39,9 +57,53 @@ a
 
 /* |||||||||| AREA TEST |||||||||| */
 
+.contenitore-top
+{
+  
+}
+
+.contenitore-bottom
+{
+  background-color: green;
+}
 
 
+body > div
+{
+  flex-basis: 100%;
+}
+.contenitore-bottom
+{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
+aside
+{
+  background-color: yellow;
+
+}
+
+header
+{
+  background-color: blue;
+  width: 100%;
+}
+
+main
+{
+  background-color: rgb(14, 14, 167);
+  padding: 40px 20px 20px;
+}
+
+
+.contenitore-bottom,
+aside,
+header
+{
+  padding: 20px;
+}
 /* |||||||||| AREA TEST |||||||||| */
 
 

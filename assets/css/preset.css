@@ -207,6 +207,30 @@
 {
   text-decoration: underline;
 }
+
+/* (_____ Position ____________________________) */
+.p-fixed
+{
+  position: fixed;
+}
+.top
+{
+  top: 0;
+}
+.bottom
+{
+  bottom: 0;
+}
+.right
+{
+  right: 0;
+}
+.left
+{
+  left: 0;
+}
+
+
 /* |||||||||| AREA COLORI |||||||||| */
 
 .sfondo-grigio
