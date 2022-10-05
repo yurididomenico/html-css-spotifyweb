@@ -28,6 +28,7 @@ body
 
 
   /* background-color: #141922; */
+  
   height: 100vh;
   color: white;
 }
@@ -36,11 +37,16 @@ body
 
 
 
-
+/* |||||||||| HEADER |||||||||| */
 
 
 /* |||||||||| HEADER |||||||||| */
-
+.header
+{
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 
 /* |||||||||| NAV |||||||||| */
@@ -48,7 +54,12 @@ body
 
 
 /* |||||||||| MAIN |||||||||| */
-
+.main
+{
+  padding-left: 70px;
+  padding-top: 100px;
+  overflow-y: scroll;
+}
 
 
 /* |||||||||| FOOTER |||||||||| */
@@ -57,52 +68,59 @@ body
 
 /* |||||||||| AREA TEST |||||||||| */
 
-.contenitore-top
+
+.contenitore-top-left
 {
-  
+  padding: 5px 10px;
+  background-color: black;
+  z-index: 1;
+  position: fixed;
+  width: 15%;
+  height: 90%;
 }
 
 .contenitore-bottom
 {
-  background-color: green;
-}
-
-
-body > div
-{
-  flex-basis: 100%;
-}
-.contenitore-bottom
-{
+  padding: 20px;
+  background-color: #282828;
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 10%;
 }
 
-aside
-{
-  background-color: yellow;
 
-}
 
-header
+
+
+.contenitore-top-left > div > img
 {
-  background-color: blue;
   width: 100%;
 }
 
-main
+.contenitore-top-left > div > *:not(.contenitore-top-left > div > img, .btn-utente)
 {
-  background-color: rgb(14, 14, 167);
-  padding: 40px 20px 20px;
+  margin: 15px 0;
 }
 
-
-.contenitore-bottom,
-aside,
-header
+.header
 {
-  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 5px;
+}
+
+.btn
+{
+  border: 1px solid white;
+  border-radius: 100vmax;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.btn-utente
+{
+  padding: 2px 4px;
+  margin-bottom: 2px;
 }
 /* |||||||||| AREA TEST |||||||||| */
 
