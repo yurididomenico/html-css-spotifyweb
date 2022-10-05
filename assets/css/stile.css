@@ -176,9 +176,10 @@ body
   border-radius: 4px;
 }
 
-.canzone-riproduzione > *
+.canzone-riproduzione > *,
+.contenitore-bottom-right > *
 {
-  margin: 0 2px;
+  margin: 0 1px;
 }
 
 
