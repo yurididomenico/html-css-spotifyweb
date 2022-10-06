@@ -79,7 +79,7 @@ body
 
 .carte > div
 {
-  width: calc(100% / 2 - 30px);
+  width: calc(100% / 2 - 10px);
   margin: 10px 10px 0 0;
 }
 
@@ -125,6 +125,22 @@ body
   /* position: fixed; */
   /* width: 50px; */
   /* width: 15%; */
+}
+
+.contenitore-top-left > div > div:last-child > h4
+{
+  margin-bottom: 5px;
+}
+
+.contenitore-top-left > div
+{
+  text-align: center;
+}
+
+.contenitore-top-left .playlist li
+{
+  font-size: 0.8rem;
+  margin: 10px 0;
 }
 
 .contenitore-bottom
@@ -214,7 +230,7 @@ body
   text-align: center;
 }
 
-.contenitore-top-left > div > *:not(.contenitore-top-left > div > img, .btn-utente)
+.contenitore-top-left > div > *:not(.contenitore-top-left > div > img, .linea, .installa)
 {
   margin: 15px 0;
 }
@@ -227,7 +243,6 @@ body
 
 .contenitore-top-left span
 {
-  display: inline-block;
   font-size: 0.8rem;
 }
 
@@ -257,8 +272,34 @@ body
 {
   padding: 2px 4px;
   margin-bottom: 2px;
+  display: inline-block;
+}
+
+.linea
+{
+  height: 2px;
+  background-color: grey;
+  width: 100%;
 }
 /* |||||||||| AREA TEST |||||||||| */
+
+
+
+
+
+
+
+.fa-square-plus
+{
+  font-size: 1.8rem;
+}
+
+
+
+.crea-playlist i
+{
+  vertical-align: middle;
+}
 
 
 
@@ -272,13 +313,6 @@ body
   display: none;
 }
 
-
-
-
-
-
-
-
 @media screen and (min-width: 425px)
 {
   .display-1
@@ -288,7 +322,12 @@ body
 
   .display-2
   {
-    display: block;
+    display: inline-block;
+  }
+
+  .contenitore-top-left > div
+  {
+    text-align: left;
   }
 }
 
