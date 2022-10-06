@@ -94,6 +94,17 @@ body
   margin: 5px 0;
 }
 
+.immagini-tonde
+{
+  border-radius: 50%;
+}
+
+.immagini-tonde img
+{
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 /* |||||||||| FOOTER |||||||||| */
 
 
@@ -112,7 +123,7 @@ body
   background-color: black;
   z-index: 1;
   /* position: fixed; */
-  width: 50px;
+  /* width: 50px; */
   /* width: 15%; */
 }
 
@@ -196,9 +207,11 @@ body
 
 
 
-.contenitore-top-left > div > img
+.contenitore-top-left > div > div > img
 {
-  width: 100%;
+  /* width: 100%; */
+  width: 30px;
+  text-align: center;
 }
 
 .contenitore-top-left > div > *:not(.contenitore-top-left > div > img, .btn-utente)
@@ -206,9 +219,22 @@ body
   margin: 15px 0;
 }
 
+.logospotify
+{
+  width: 100px;
+  margin-right: 50px;
+}
+
+.contenitore-top-left span
+{
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+
 .contenitore-top-right
 {
-  overflow-y: scroll;
+  overflow-y: auto;
   flex-grow: 1;
 }
 
@@ -236,11 +262,35 @@ body
 
 
 
+.display-1
+{
+  display: block;
+}
+
+.display-2
+{
+  display: none;
+}
 
 
 
 
 
+
+
+
+@media screen and (min-width: 425px)
+{
+  .display-1
+  {
+    display: none;
+  }
+
+  .display-2
+  {
+    display: block;
+  }
+}
 
 
 
