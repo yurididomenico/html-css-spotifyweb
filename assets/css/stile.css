@@ -56,14 +56,9 @@ body
 /* |||||||||| MAIN |||||||||| */
 .main
 {
-  padding: 90px 0 0 80px;
-  overflow-y: scroll;
+  padding: 90px 10px;
+  /* overflow-y: scroll; */
   margin-bottom: 100px;
-}
-
-.main > .main-sezione-1
-{
-  margin-bottom: 20px;
 }
 
 .main-sezione-1 > a
@@ -71,6 +66,10 @@ body
   margin: 10px 5px;
 }
 
+.main-sezione-carte > h3
+{
+  margin-top: 20px;
+}
 
 
 .carte > div > img
@@ -101,26 +100,30 @@ body
 
 /* |||||||||| AREA TEST |||||||||| */
 
+.contenitore-top
+{
+  height: calc(100vh - 100px);
+}
+
 
 .contenitore-top-left
 {
   padding: 5px 10px;
   background-color: black;
   z-index: 1;
-  position: fixed;
+  /* position: fixed; */
   width: 50px;
   /* width: 15%; */
-  height: 90%;
 }
 
 .contenitore-bottom
 {
   padding: 10px;
   background-color: #282828;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed; */
+  /* bottom: 0; */
   width: 100%;
-  height: 10%;
+  height: 100px;
 }
 
 .contenitore-bottom > div > div
@@ -202,6 +205,13 @@ body
 {
   margin: 15px 0;
 }
+
+.contenitore-top-right
+{
+  overflow-y: scroll;
+  flex-grow: 1;
+}
+
 
 .header
 {
