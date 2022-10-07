@@ -239,6 +239,10 @@
 {
   position: relative;
 }
+.p-absolute
+{
+  position: absolute;
+}
 .top
 {
   top: 0;

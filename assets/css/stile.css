@@ -33,7 +33,40 @@ body
   color: white;
 }
 
+.btn
+{
+  border: 1px solid white;
+  border-radius: 100vmax;
+  display: inline-block;
+  padding: 10px 15px;
+}
 
+.btn-utente
+{
+  padding: 2px 4px;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+
+.linea
+{
+  height: 2px;
+  background-color: grey;
+  width: 100%;
+}
+
+.linea2
+{
+  height: 2px;
+  background-color: #abff4b;
+  width: 40%;
+  margin: 2px auto 0;
+}
+
+.barra-left .fa-house
+{
+  margin-left: 5px;
+}
 
 
 
@@ -46,7 +79,11 @@ body
   top: 0;
   left: 0;
   right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 5px;
 }
+
+
 
 
 /* |||||||||| NAV |||||||||| */
@@ -61,6 +98,11 @@ body
   margin-bottom: 100px;
 }
 
+.contenitore-top
+{
+  height: calc(100vh - 100px);
+}
+
 .main-sezione-1 > a
 {
   margin: 10px 5px;
@@ -69,6 +111,33 @@ body
 .main-sezione-carte > h3
 {
   margin-top: 20px;
+}
+
+.contenitore-top-left
+{
+  padding: 5px 10px;
+  background-color: black;
+  z-index: 1;
+  
+  /* position: fixed; */
+  /* width: 50px; */
+  /* width: 15%; */
+}
+
+.contenitore-top-left > div > div:last-child > h4
+{
+  margin-bottom: 5px;
+}
+
+.contenitore-top-left > div
+{
+  text-align: center;
+}
+
+.contenitore-top-left .playlist li
+{
+  font-size: 0.8rem;
+  margin: 10px 0;
 }
 
 
@@ -105,45 +174,53 @@ body
   object-fit: cover;
 }
 
-/* |||||||||| FOOTER |||||||||| */
 
 
-
-/* |||||||||| AREA TEST |||||||||| */
-
-.contenitore-top
+.contenitore-top-left > div > div > img
 {
-  height: calc(100vh - 100px);
-}
-
-
-.contenitore-top-left
-{
-  padding: 5px 10px;
-  background-color: black;
-  z-index: 1;
-  
-  /* position: fixed; */
-  /* width: 50px; */
-  /* width: 15%; */
-}
-
-.contenitore-top-left > div > div:last-child > h4
-{
-  margin-bottom: 5px;
-}
-
-.contenitore-top-left > div
-{
+  /* width: 100%; */
+  width: 30px;
   text-align: center;
 }
 
-.contenitore-top-left .playlist li
+.contenitore-top-left > div > *:not(.contenitore-top-left > div > img, .linea, .installa)
 {
-  font-size: 0.8rem;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
+.logospotify
+{
+  width: 100px;
+  margin-right: 50px;
+}
+
+.contenitore-top-left span
+{
+  font-size: 0.8rem;
+}
+
+.crea-playlist i
+{
+  vertical-align: middle;
+}
+
+.fa-square-plus
+{
+  font-size: 1.8rem;
+}
+
+.contenitore-top-right
+{
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.carta img
+{
+  width: 100%;
+}
+
+/* |||||||||| FOOTER |||||||||| */
 .contenitore-bottom
 {
   padding: 10px;
@@ -222,100 +299,20 @@ body
 .contenitore-bottom-right
 {text-align: right;}
 
-
-
-
-
-.contenitore-top-left > div > div > img
+.barra-bottom
 {
-  /* width: 100%; */
-  width: 30px;
-  text-align: center;
+  border-bottom: 2px solid #abff4b;
+  
+  padding-bottom: 2px;
 }
 
-.contenitore-top-left > div > *:not(.contenitore-top-left > div > img, .linea, .installa)
+.barra-left
 {
-  margin: 15px 0;
-}
-
-.logospotify
-{
-  width: 100px;
-  margin-right: 50px;
-}
-
-.contenitore-top-left span
-{
-  font-size: 0.8rem;
+  box-shadow:  -2px 0  #abff4b;
 }
 
 
-.contenitore-top-right
-{
-  overflow-y: auto;
-  flex-grow: 1;
-}
-
-
-.header
-{
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px 5px;
-}
-
-.btn
-{
-  border: 1px solid white;
-  border-radius: 100vmax;
-  display: inline-block;
-  padding: 10px 15px;
-}
-
-.btn-utente
-{
-  padding: 2px 4px;
-  margin-bottom: 2px;
-  display: inline-block;
-}
-
-.linea
-{
-  height: 2px;
-  background-color: grey;
-  width: 100%;
-}
-
-.linea2
-{
-  height: 2px;
-  background-color: #abff4b;
-  width: 40%;
-  margin: 2px auto 0;
-}
-/* |||||||||| AREA TEST |||||||||| */
-.barra-left .fa-house
-{
-  margin-left: 5px;
-}
-
-
-
-
-
-
-.fa-square-plus
-{
-  font-size: 1.8rem;
-}
-
-
-
-.crea-playlist i
-{
-  vertical-align: middle;
-}
-
-
+/* |||||||||| Query |||||||||| */
 
 .display-1
 {
@@ -334,7 +331,7 @@ body
     display: none;
   }
 
-  .display-2
+  .display-2:not(.carta i)
   {
     display: inline-block;
   }
@@ -374,27 +371,56 @@ body
   } 
 }
 
+/* |||||||||| HOVER |||||||||| */
 
-.carta img:hover
+/*-----Hover carte immagini play-----*/
+.play
+{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  display: none;
+}
+
+.carta-immagine:hover img
 {
   opacity: 0.5;
   cursor: pointer;
-  
 }
 
-.barra-bottom
+.carta-immagine:hover .play
 {
-  border-bottom: 2px solid #abff4b;
-  
-  padding-bottom: 2px;
+  display: block;
+  cursor: pointer;
 }
 
-.barra-left
+/*-----Hover bottone upgrade-----*/
+.header > .btn:hover
 {
-  box-shadow:  -2px 0  #abff4b;
+  scale: 1.2;
+  cursor: pointer;
+}
+
+/*-----Hover link nav & main-----*/
+.hover-white:hover
+{
+  color: white;
+  cursor: pointer;
 }
 
 
+
+
+/* |||||||||| AREA TEST |||||||||| */
+
+
+
+
+
+
+
+/* |||||||||| AREA TEST |||||||||| */
 
 
 
